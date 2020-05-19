@@ -1,0 +1,154 @@
+package com.copa.Util;
+
+public class ATOflowPageObjects {
+	 public static String genderXpath="//md-select[md-select-value[span [contains(text(),'Gender')] or span[div[div[contains(text(),'Male') or contains(text(),'Female')]]]]]";
+	 public static String ReservationXpath ="//md-menu[@ng-model='layout.pssguiModules.module']/button";
+	 public static String CheckInXpath = "//div[contains(@class,'_md md-open-menu-container') and contains(@class,'md-active')]//button[contains(text(),'Check-In')]";
+	 public static String LabelPassengerXpath = "//div[contains(text(),'Passenger Search')]";
+	 public static String GivenNameXpath ="//input[contains(@ng-model,'givenName')]";
+	 public static String SurNameXpath = "//input[contains(@ng-model,'surName')]";
+	 public static String FromXpath ="//pssgui-passenger-search//md-input-container/input[contains(@aria-label,'From')]";
+	 public static String ToXpath ="//pssgui-passenger-search//md-input-container/input[contains(@aria-label,'To')]";
+	 public static String FlightXpath ="//md-input-container/input[@ng-required='passengerSearch.reqFlight']";
+	 public static String OrderNumXpath ="//pssgui-passenger-search//md-input-container/input[contains(@aria-label,'Order Number')]";
+	 public static String TicketXpath ="//pssgui-passenger-search//md-input-container/input[contains(@aria-label,'ticket')]";
+	 public static String FFXpath ="//div[@class='hpe-pssgui-menu-dropdown layout-column flex']//md-select";
+	 public static String FFnumXpath ="//input[@name='ffNumber']";
+	 public static String DateXpath ="//pssgui-date-time[contains(@ng-model,'passengerSearch')]//input[@class='md-datepicker-input']";
+	 public static String SearchXpath ="//div[contains(@pssgui-shortcut,'passengerSearch')]/button[contains(text(),'Search')]";
+	 public static String OrderidXpath ="//*[text()='Order Id']";
+	 public static String FirstpnrXpath ="//*[contains(@ng-repeat,'Result')]/*[contains(@class,'link')]";
+	 public static String FirstflightXpath ="//*[contains(@ng-click,'Result')]";
+	 public static String OrderpnrXpath ="//span[contains(@ng-click,'pnr')]";
+	 public static String FQTVXpath ="//span[contains(@security-validate,'UpdateFQTV-fqtv-updateFQTVDisabled')]";
+	 public static String ProceedCheckInXpath ="//button[text()='Proceed to Check In']";
+	 public static String SecurityXpath ="//div[contains(text(),'Security Document Verification')]";
+	 public static String SurnameXpath1 ="//input[@name='Surname']";
+	 public static String FirstnameXpath ="//input[@name='firstName']";
+	 public static String BirthDateXpath ="//pssgui-date-time[contains(@ng-model,'document.BirthDate')]//input[@class='md-datepicker-input']";
+	 public static String DocTypeXpath ="//md-select[contains(@ng-model,'DocType')]";
+	 public static String DocIDXpath ="//input[contains(@ng-model,'DocID')]";
+	 public static String COIXpath ="//input[contains(@aria-label,'Country of Issuance')]";
+	 public static String NtionalXpath ="//input[contains(@aria-label,'Nationality')]";
+	 public static String CORXpath ="//input[contains(@aria-label,'Country Of Residence')]";
+	 public static String EmernameXpath ="//input[contains(@aria-label,'Emergency Name')]";
+	 public static String EmerPhXpath ="//input[contains(@aria-label,'Emergency Phone')]";
+	 public static String ExpdateXpath ="//pssgui-date-time[contains(@ng-model,'document.ExpireDate')]//input[@class='md-datepicker-input']";
+	 public static String ExitdateXpath ="//pssgui-date-time[contains(@ng-model,'personalInfo.model.ExitDate')]//input[@class='md-datepicker-input']";
+	 public static String SubmitXpath ="//button[text()='Submit']";
+	 public static String DoneXpath ="//button[text()='Done']";
+	 public static String FinalCheckInXpath ="//button[text()='Check In']";
+	 public static String BaggSubmitXpath="//button[text()='Submit']";
+	 public static String ConfirmOKXpath ="//div[contains(@class,'confirmation')]//button[text()='OK']";
+	 
+	 public static String APISComplete="//span[contains(text(),'APIS Complete;')]";
+	 public static String BaggageXpath="//i[@class='icon-baggage']/parent::*";
+	 public static String ErrXpath="//*[text()='Redirect Confirmation']";
+	 public static String OKXpath="//button[contains(text(),'OK')]";
+	 public static String CancleXpath="//button[contains(text(),'Cancel')]";
+	 public static String BagtypeXpath="//md-select[contains(@ng-model,'bag.type')]";
+	 public static String WeightXpath="//input[@name='weight']";
+	 public static String BagTagXpath="//md-select[@ng-model='bag.bagTag']";
+	 public static String Manual_Bag_Tag_Xpat= "//div[@role='presentation' and @aria-hidden='false']//md-option[@value='Manual']";
+	 public static String Manual_Bag_Tag_Number_Xpath="//input[@name='tagNumber']";
+	 
+	 public static String BagtagXpath="//md-select[contains(@ng-model,'bagTag')]";
+	 //public static String BagweightXpath="//input [@ng-value='baggage.bagWeight']";
+	 public static String BagweightXpath="//input [@name='weight']";
+	 public static String ManualXpath="//md-option[div[contains(text(),'Manual')]]";
+		 
+	 public static String TNumberXpath="//input[contains(@name,'tagNumber')]";
+		 
+	 public static String TopXpath="//md-option[contains(@ng-repeat,'bag.bagOptions')]";
+	 public static String Proceedpath="//button[contains(text(),'Proceed')]";
+	 public static String ContinueXpath="//button[contains(text(),'Continue')]";
+	 public static String NextXpath="//button[contains(text(),'Next')]";
+	 public static String SecondaryDoc="//div[contains(@class,'tab-active')]/div[@translate='pssgui.secondary.document']";
+	 public static String DestinationAddress="//div[contains(@class,'tab-active')]/div[@translate='pssgui.destination.address']";
+	 public static String StreetAddress="//input[contains(@name, 'Street Address')]";
+	 public static String SecSurname="//input[contains(@name,'Surname') and contains(@class,'ng-empty')]";
+	 public static String SecFirstName="//input[contains(@name,'firstName') and contains(@class,'ng-empty')]";
+	 public static String SecDocNum="//input[contains(@name,'document_number') and contains(@class,'ng-empty')]";
+	
+	 public static String AdsResponsePopup="//button[contains(text(),'OK')]";
+	 public static String KTXpath="//input[@name='KnownTravelerNumber']";
+	 public static String Redress="//input[@name='RedressNumber']";
+	 public static String AddAnotherBag ="//span[text()='Add another bag']";
+	 public static String SaetChangedIcon="//i[contains(@ng-click,'stateChange') and contains(@class,'icon-seatmap')]";
+	 public static String ChangeSeatCheckedinPax="//md-input-container[contains(@class,'passenger-seat-number')]/input";
+	 public static String DropDownSelectSeat="//md-select[contains(@ng-model,'seatmapPassengers.mode')]";
+	 public static String WindowSeat="//div[contains(text(),'Window seat')]";
+	 //public static String NotCheckedinPax="//div[contains(@ng-repeat,'passengerItinerary')]/child::div/div[1]/div[2]/i[contains(@class,'in-active-state')]//parent::div/preceding-sibling::md-checkbox/div[1]/div[1]";
+	 public static String NotCheckedinPax="//div[contains(@ng-repeat,'passengerItinerary')]/child::div/div[1]/div[2]/i[contains(@class,'in-active-state')]//parent::div/preceding-sibling::md-checkbox";
+	 public static String CheckedInPax="//div[contains(@ng-repeat,'passengerItinerary')]/child::div/div[1]/div[2]/i[contains(@class,'checked-in active-state')]//parent::div/preceding-sibling::md-checkbox/div[1]";
+	 public static String TktNotSyncStatus="//div[div[contains(text(),'eTKT Not Sync')]]/div/div[@class='ng-binding']";
+	 public static String AllPnrCheckBox="//div[contains(@ng-repeat,'passengerItinerary')]/child::div/div[1]/div[2]/i[contains(@class,'active-state')]//parent::div/preceding-sibling::md-checkbox/div[1]";
+	 public static String FlightHeaderLeftBlock="//div[contains(@class,'flight-info-left-block')]";
+	 public static String FlightNoOnHeader="//div[contains(@class,'flight-info-left-block')]//child::div[contains(@class,'carousel-item tab-blk')]/span";
+	 public static String FlightHeaderMiddBlock="//div[contains(@class,'flight-info-mid-block')]";
+	 public static String FlightNoHeaderMiddBlock="//div[contains(@class,'flight-info-mid-block')]//child::div[contains(@class,'flight-details layout-align-center')]/div[1]";
+	 public static String DateHeaderMiddBlock="//div[contains(@class,'flight-info-mid-block')]//child::div[contains(@class,'flight-details layout-align-center')]/div[2]";
+	 public static String flightactionHeaderMiddBlock="//md-select[contains(@ng-model,'flightInfo.model.flightActionSelected')]//span[1]";
+	 public static String SeginfoHeaderMiddBlock="//div[div[contains(@ng-repeat,'airportCode in flightInf')]]";
+	 public static String FltStatus="//div[contains(@class,'mid-block-third')]/div[2]/div[1]";
+	 public static String flightTime="//div[contains(@class,'mid-block-third')]/div[2]/div[3]//child::div[contains(@ng-class,'dateTime.timeTyp')]";
+	 public static String FltBookedSeat="//div[contains(@class,'info-right-block')]/div[2]/div[3]/div[2]/div";
+	 public static String FltCheckedinSeat="//div[contains(@class,'info-right-block')]/div[2]/div[3]/div[3]/div";
+	 public static String passangerActionSeat="//div[@id='passenger-action']";
+	 public static String UpgradeSeatXpath="//div[contains(text(),'Up/Down Grade Change')]";
+	 public static String SelectPaxSeatChangeXpath="//div[contains(@ng-click,'selectSeat(passenger')]";
+	 public static String BusinessClassSeatChangeXpath="//div[div[contains(text(),'Business')]]/div[@class='cabin']//div[contains(@class,'icn-available') or contains(@class,'icn-chargeable') and not (contains(@class,'icn-held'))]";
+	 public static String ProceedToPayChangeXpath="//div[contains(@aria-disabled,'true')]/span[contains(text(),'Proceed to Pay')]";
+	
+	 public static String ReservationMenu="//div[contains(@class,'_md md-open-menu-container') and contains(@class,'md-active')]//button[contains(text(),'Reservations')]";
+	 public static String PassengerRes="//div[contains(@class,'tab') and div[contains(text(),'Passengers')]]";
+	 public static String PersonalInfoRes="//div[div[text()='Personal Information']]";
+	 public static String SnameRes="//input[@name='lastName']";
+	 public static String FNameRes="//input[@name='firstName']";
+	 public static String EmerNameRes="//input[@name='EmergencyName']";
+	 public static String EmerPhRes="//div[@type='emergency-phone']/form//div/md-input-container/input[@name='Phone Number']";
+	 public static String KTNumRes="//input[@name='KnownTravelerNumber']";
+	 public static String RedressRes="//input[@name='RedressNumber']";
+	 public static String TravelDocRes="//div[contains(text(),'Travel document')]";
+	 public static String TktNotSyncStatuscheckboxXpath="//div[contains(@ng-repeat,'orderPassengers')]/div[contains(@ng-class,'chkBoxSelected')]/div/md-checkbox";
+	 public static String SyncButtonXpath="//button[contains(text(),'Sync E Ticket')]";
+	 public static String InboundTab= "//div[@translate='pssgui.inbound']";
+	 public static String InboundList= "//div[@class='table-inbound-hover layout-column']";
+	 public static String OSITabRes= "//div[contains(text(), 'OSI')]";
+	 public static String MisconnectXpath= "//button[@translate='pssgui.release.misconnects']";
+	 public static String SelTypeIcon= "//md-select[@ng-model='airportPassenger.model.checkinAction']";
+	// public static String AltFgtList= "//div[text()='Alternate Flight']";
+	 public static String AltFgtList= "//div[text()='Alternate Flight']";
+	 
+	// public static String AltFgtSelButton= "(//button[contains(@ng-click,'flightResult.selectedFlights')])[1]";
+	 public static String AltFgtSelButton= "(//button[contains(@ng-click,'flightResult.selectedFlights')])";
+	 public static String GreenChkMarkIcon="//i[@class='icon-checked-in active-state']";
+	 
+	 
+	 public static String InvolXpath= "//button[@translate='pssgui.involuntary']";
+	 public static String ReasonXpath= "//md-select[@ng-model='irops.reasonCode']";
+	 public static String SubmitBtnXpath= "//button[@translate='pssgui.submit']";
+	 public static String ReturnXpath= "//button[text()='Return to Check In']";
+	 public static String PaxDataChkBox= "//md-checkbox[@ng-model='passengerData.chkBoxSelected']";
+	 public static String SecDatePicker="//md-datepicker[contains(@class,'ng-invalid-required')]//input";
+	 public static String unconcilePassanger="//div[contains(@ng-if,'nonStandardTable.pnr')]/div[1]";
+	 
+	 public static String eTKTNotSyncPaxName="//div[div/div/i[contains(@class,'icon-etkt-not-sync')]]//following-sibling::div[1]/div[1]/span";
+	 public static String eTKTNotSyncButton="//div[contains(text(),'eTKT Not Sync')]";
+	 public static String PAXListOfStandBy="//div[contains(@ng-repeat,'passengerData in passengerItinerary')]/div/div[2]/div/span";
+	 public static String FlightLegChkbox="(//tr[@ng-repeat='leg in flight']//md-checkbox[@type='checkbox'])";
+	 public static String ExitdateJustificationXpath ="//input[contains(@ng-model,'ExitDateJustification')]"; 
+	 public static String gate="//div[contains(@class,'_md md-open-menu-container') and contains(@class,'md-active')]//button[contains(text(),'Gate')]";
+	 public static String AdcSataus="//span[@translate='pssgui.adc.not.ok']";
+	 public static String AdcBypass="//span[@translate='pssgui.adc.bypassed']";
+	 public static String AdcOk="//span[@translate='pssgui.adc.ok']";
+	 public static String APIScompletevar="//span[@translate='pssgui.apis.complete']";
+	 
+	 public static String flighNumXpath="//div[contains(@class,'flight-details')]/div[1]";
+	 public static String FlighOrginXpath="//div[contains(@class,'mid-block-second-column')]//div[@airport-code='airportCode' and @role='button']";
+	 public static String flightdateXpath="//div[contains(@class,'flight-info-mid-block')]//div//div[@layout-align='center start']/div[2]";
+	 public static String FlightAct = "//md-select[@aria-label='Flight Actions']";
+	 public static String SeatPath = "//div[contains(@class,'cabin-type') and contains(text(),'SeatType')]/..//div[@class='seat']/div[contains(@class,'icn-available') or contains(@class,'icn-chargeable') and not (contains(@class,'icn-held')) and not (contains(@class,'icn-blocked'))]";
+	 public static String InVldSeat = "//span[contains(text(),'InvalidSeatSpecified')]";
+	 public static String lRefresh = "//i[contains(@class,'icon-refresh')]";
+}

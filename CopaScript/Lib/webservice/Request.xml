@@ -1,0 +1,25 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://schemas.eds.com/transportation/message/currencydisplay/request" xmlns:com="http://schemas.eds.com/transportation/message/fares/common" xmlns:com1="http://www.opentravel.org/OTA/2003/05/CommonTypes">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <req:com.eds.travel.fares.currency.display.request EchoToken="1351" TimeStamp="2019-04-08T02:09:12.849" Target="Test" Version="1.0" SequenceNmbr="290266713" PrimaryLangID="EN" RequestorCompanyCode="CM" RequestorNetworkID="DI" targetNamespace="http://schemas.eds.com/transportation/message/currencydisplay/request" SetLocation="LAX" ApplicationID="TRR" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.eds.com/transportation/message/currencydisplay/request">
+         <Headers Trailers="n">
+            <POS xmlns="http://schemas.eds.com/transportation/message/fares/common">
+               <Source AirlineVendorID="CM" xmlns="http://www.opentravel.org/OTA/2003/05/CommonTypes"/>
+            </POS>
+         </Headers>
+         <DataArea>
+            <CurrencyTypeCode CurrencyType="nuc"/>
+            <CurrencyOptions FromCurr="GBP" ToCurr="NUC" NoRound="N" Round="OTHER">
+               <Amounts>
+                  <Amount Value="571.00"/>
+               </Amounts>
+               <Ticket Date="20190618" Time="0709"/>
+            </CurrencyOptions>
+            <User SetLocation="LAX" CRS="1Y" Carrier="CM" Agency="&lt;>" ERSP="&lt;>" DutyCode="PR" LNIATA="F165D7">
+               <Dept DeptCode="&lt;>" DeptNum="&lt;>" xmlns="http://schemas.eds.com/transportation/message/fares/common"/>
+            </User>
+         </DataArea>
+         <Trailers/>
+      </req:com.eds.travel.fares.currency.display.request>
+   </soapenv:Body>
+</soapenv:Envelope>
